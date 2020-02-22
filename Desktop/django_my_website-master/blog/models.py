@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Category(models.Model):
     name = models.CharField(max_length=25, unique=True)
-    description = models.TextField(blank=True)
+    description = models.TextField(blank=False)
 
 
 class Post(models.Model):
