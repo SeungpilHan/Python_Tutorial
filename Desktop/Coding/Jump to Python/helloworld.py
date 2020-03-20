@@ -52,3 +52,68 @@ p = "pithon"
 a = p[:1]
 b = p[2:]
 print(a + "y" + b)
+
+print("i eat %d apples" % 3)
+print("i eat %s apples" % "five")
+
+print("Error is %d%%" % 98)
+
+print("%10s" % "hi")
+
+print("%10.4f" % 4.42134234)
+
+a = "hobby"
+print(a.count('b'))
+
+b = "python is best choice"
+
+print(b.find('b'), b.find('k'))
+a = "Life is too short"
+print(a.index('t'))
+
+a=","
+print(a.join('abcd'))
+
+a = "hi"
+print(a.upper())
+
+a ="    hi my name is Han"
+print(a.lstrip())  #오른쪽 공백 제거는 a.rstrip(), 양쪽 공백 제거는 a.strip
+
+a = "Life is too short"
+print(a.replace("Life", "your leg"))
+
+a = "Life is too short"
+print(a.split())
+
+a = "Life:is:too:short"
+print(a.split(':'))
+
+a = "i eat {0} apples".format(3)
+b = "i eat {0} apples".format('five')
+print(a, b)
+
+number = 3
+a = "i eat {0} apples".format(number)
+print(a)
+
+number = 3
+days = "Three"
+a = "i eat {0} apples, {1} days".format(number, days)
+print(a)
+
+a = "오늘은 {날씨}입니다. 기온은 {온도}도입니다.".format(날씨='맑음', 온도=21)
+print(a)
+
+print("{0:<10}".format("hi"))
+print("{0:>10}".format("hi"))
+print("{0:^10}".format("hi"))
+
+print("{0:=^10}".format("hi"))
+print("{0:!<10}".format("hi"))
+
+y = 3.42134234
+print("{0:0.4f}".format(y))
+print("{0:10.4f}".format(y))
+
+print("{{Han}}".format())
