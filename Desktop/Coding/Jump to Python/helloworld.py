@@ -117,3 +117,40 @@ print("{0:0.4f}".format(y))
 print("{0:10.4f}".format(y))
 
 print("{{Han}}".format())
+
+a = [1, 2, 3]
+a.append(5)
+a.append([6, 8])
+print(a)
+
+a = [1, 3, 2, 9, 4]
+a.sort()
+print(a)
+
+
+a = [1,2, "a", 9]
+a.reverse()
+print(a)
+
+a = [1, 2, 3]
+print(a.index(3))
+
+a = [1, 2, 3]
+a.insert(0, 8)
+print(a)
+
+a = [1, 2, 3, 1, 2, 3]
+a.remove(3)
+print(a)
+
+a = [1, 2, 3]
+print(a.pop())
+print(a)
+
+a = [1, 3, 2, 1, 3]
+print(a.count(1))
+
+a = [1,2,3,4]
+a.extend([6,7])
+a.extend([8,0])
+print(a)
