@@ -35,3 +35,16 @@ a[1] = 4
 print(a)
 print(b)
 
+money = 1
+if money:
+  print("택시를 타라")
+else:
+  print("걸어가라")
+  
+game = 0
+if game:
+  print("하는 중")
+else:
+  print("쉬는중")
+  
+  
