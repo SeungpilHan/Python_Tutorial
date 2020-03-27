@@ -47,4 +47,7 @@ if game:
 else:
   print("쉬는중")
   
+x = 3
+y = 2
+print(x > y)
   
