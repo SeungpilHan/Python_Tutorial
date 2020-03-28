@@ -96,3 +96,9 @@ elif card:
   print("택시를 타세요")
 else:
   print("걸어서 가세요")
+  
+if 'money' in pocket:
+  pass
+else:
+  print("카드를 꺼내라")
+  
