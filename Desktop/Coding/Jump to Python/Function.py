@@ -24,3 +24,4 @@ def sum_many(*args):
   for i in args:
     sum = sum + i
   return sum
+
