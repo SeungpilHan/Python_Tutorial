@@ -52,7 +52,8 @@ while True:
 A = [70, 60, 55, 75, 95, 90, 80, 85, 100]
 total = 0
 for score in A:
-  total += score
+  total += score #A 학급의 점수를 모두 더한다
 print(total)
 average = total / len(A)
 print(average)
+

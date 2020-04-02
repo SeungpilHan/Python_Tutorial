@@ -50,17 +50,3 @@ print(result)
 
 result = [x*y for x in range(2, 10) for y in range(1,10)]
 print(result)
-
-a = "Life is too short, you need python"
-
-if "wife" in a:print("wife")
-elif "python" in a and "you" not in a: print("python")
-elif "shirt" not in a:print("shirt")
-elif "need" in a:print("need")
-else: print("none")
-
-i = 0
-while True:
-  i += 1
-  if i > 5: break
-  print('*' * i)
