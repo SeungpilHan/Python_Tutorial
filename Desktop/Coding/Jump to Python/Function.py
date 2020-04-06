@@ -37,3 +37,13 @@ result = sum_many(1,2,3)
 print(result)
 result = sum_many(1,2,3,4,5,6,7,8,9,10)
 print(result)
+
+def say_myself(name, old, man=True):
+  print("나의 이름은 %s입니다." % name)
+  print("나이는 %d살입니다." % old)
+  if man:
+    print("남자입니다.")
+  else:
+    print("여자입니다.")
+say_myself("한승필", 28)
+
