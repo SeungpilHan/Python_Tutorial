@@ -47,3 +47,25 @@ def say_myself(name, old, man=True):
     print("여자입니다.")
 say_myself("한승필", 28)
 
+a = 1
+def vertest(a):
+  a = a + 1
+
+vertest(a)
+print(a)
+
+a = 1
+def vartest(a):
+  a = a + 1
+  return a
+
+a = vartest(a)
+print(a)
+
+a = 1
+def vartest():
+  global a
+  a = a + 1
+  
+vartest()
+print(a)
