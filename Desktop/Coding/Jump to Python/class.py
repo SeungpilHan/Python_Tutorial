@@ -7,4 +7,3 @@ def adder(num):
 
 print(adder(3))
 print(adder(5))
-
