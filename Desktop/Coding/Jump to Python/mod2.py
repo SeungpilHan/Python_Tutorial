@@ -10,3 +10,5 @@ if __name__ == "__main__":
   a = Math()
   print(a.solv(3))
   print(sum(PI, 4.4))
+  
+  
