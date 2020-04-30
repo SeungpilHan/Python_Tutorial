@@ -19,5 +19,4 @@ print(divmod(1.3, 0.2))
 
 for i, name in enumerate(['body', 'foo', 'bar']):
   print(i, name)
-
   
