@@ -28,3 +28,24 @@ def positive(numberList):
     return result
   
 print(positive([1, -3, 2, 0, -5, 6]))
+
+def positive(x):
+  return x >0
+
+print(list(filter(positive,[1,-3,2,0,-5,6])))
+
+#a = input()
+
+#b = input("Enter: ")
+
+print(int('3'))
+
+print(int(3.5))
+
+class person: pass
+
+a = person()
+print(isinstance(a, person))
+
+b = 3
+print(isinstance(b, person))
