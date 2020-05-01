@@ -20,3 +20,11 @@ print(divmod(1.3, 0.2))
 for i, name in enumerate(['body', 'foo', 'bar']):
   print(i, name)
   
+def positive(numberList):
+  result = []
+  for num in numberList:
+    if num > 0:
+      result.append(num)
+    return result
+  
+print(positive([1, -3, 2, 0, -5, 6]))
