@@ -49,3 +49,6 @@ print(isinstance(a, person))
 
 b = 3
 print(isinstance(b, person))
+
+sum = lambda a,b: a+b
+print(sum(3,5))
