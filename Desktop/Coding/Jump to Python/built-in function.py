@@ -52,3 +52,15 @@ print(isinstance(b, person))
 
 sum = lambda a,b: a+b
 print(sum(3,5))
+
+myList = [lambda a,b:a+b, lambda a,b:a*b]
+print(myList)
+
+print(len("python"))
+
+print(list("python"))
+
+a = [1, 2, 3]
+b = list(a)
+print(b)
+
