@@ -25,3 +25,10 @@ print(list(range(5,10)))
 print(list(range(1, 10, 2)))
 
 print(sorted([3,1,2]))
+
+print(tuple("abc"))
+print(tuple([1,2,3]))
+
+print(type("abc"))
+
+print(list(zip([1,2,3],[4,5,6])))
