@@ -32,3 +32,4 @@ print(tuple([1,2,3]))
 print(type("abc"))
 
 print(list(zip([1,2,3],[4,5,6])))
+
