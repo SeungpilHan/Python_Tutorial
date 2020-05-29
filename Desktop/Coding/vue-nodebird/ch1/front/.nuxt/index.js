@@ -11,6 +11,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_plugin_ff1508c4 from 'nuxt_plugin_plugin_ff1508c4' // Source: ./vuetify/plugin.js (mode: 'all')
+import nuxt_plugin_axios_2c658d66 from 'nuxt_plugin_axios_2c658d66' // Source: ./axios.js (mode: 'all')
+
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
 
@@ -48,7 +51,7 @@ async function createApp (ssrContext) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"NodeBird","meta":[],"link":[],"style":[],"script":[]},
+    head: {"title":"NodeBird","meta":[],"link":[{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -116,7 +119,45 @@ async function createApp (ssrContext) {
     ssrContext
   })
 
+  const inject = function (key, value) {
+    if (!key) {
+      throw new Error('inject(key, value) has no key provided')
+    }
+    if (value === undefined) {
+      throw new Error(`inject('${key}', value) has no value provided`)
+    }
+
+    key = '$' + key
+    // Add into app
+    app[key] = value
+
+    // Check if plugin not already installed
+    const installKey = '__nuxt_' + key + '_installed__'
+    if (Vue[installKey]) {
+      return
+    }
+    Vue[installKey] = true
+    // Call Vue.use() to install the plugin into vm
+    Vue.use(() => {
+      if (!Object.prototype.hasOwnProperty.call(Vue, key)) {
+        Object.defineProperty(Vue.prototype, key, {
+          get () {
+            return this.$root.$options[key]
+          }
+        })
+      }
+    })
+  }
+
   // Plugin execution
+
+  if (typeof nuxt_plugin_plugin_ff1508c4 === 'function') {
+    await nuxt_plugin_plugin_ff1508c4(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_axios_2c658d66 === 'function') {
+    await nuxt_plugin_axios_2c658d66(app.context, inject)
+  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {

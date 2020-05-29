@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@nuxtjs/axios": "^5.10.3",
+    "@nuxtjs/vuetify": "^1.11.2",
     "nuxt": "^2.8.1",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vuetify": "^2.2.30"
   },
   "devDependencies": {},
   "scripts": {
