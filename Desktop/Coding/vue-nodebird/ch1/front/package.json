@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@nuxtjs/axios": "^5.10.3",
+    "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/vuetify": "^1.11.2",
+    "axios": "^0.19.2",
     "nuxt": "^2.8.1",
     "vue": "^2.6.10",
-    "vuetify": "^2.2.30"
+    "vuetify": "^2.0.5"
   },
   "devDependencies": {},
   "scripts": {
@@ -17,5 +18,3 @@
   "author": "",
   "license": "ISC"
 }
-
-

@@ -1,20 +1,14 @@
 <template>
   <div>
-    profile page
+    profile
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'admin',
   data() {
     return {
       name: 'Nuxt.js',
-    }
-  },
-  head() {
-    return {
-      title: '프로필'
     }
   },
 }
