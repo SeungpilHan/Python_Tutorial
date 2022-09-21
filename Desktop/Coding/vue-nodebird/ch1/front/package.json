@@ -9,7 +9,7 @@
     "axios": "^0.19.2",
     "nuxt": "^2.8.1",
     "vue": "^2.6.10",
-    "vuetify": "^2.0.5"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {},
   "scripts": {
